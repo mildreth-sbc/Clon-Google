@@ -1,0 +1,216 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/********** NAVEGACIÓN ************/
+
+header{
+    width: 100%;
+    height: 40px;
+}
+
+header nav{
+    /* Justificar a la derecha */
+    display: flex;
+    justify-content: flex-end; 
+}
+
+header nav .nav-right-section{
+    width: 30px;
+    /* Eliminar puntos */
+    list-style: none;
+    /* Propiedad flex - que sea responsivo y flexible */
+    display: flex;
+    justify-content: center;
+    /* Centrado verticalmente */
+    align-items: center;
+    height: auto;
+}
+
+a{
+    /* Remueve las líneas de abajo */
+    text-decoration:none ;
+}
+
+nav .nav-right-section a{
+    margin-right: 25px;
+    color: rgba(0,0,0,.87);
+}
+
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    /* Escala la imagen al mayor tamaño posible sin recortarla ni estirarla */
+    background-size: contain;
+    background-repeat: no-repeat; /*Sirve para que no se repitan los íconos en caso de que se estén repitiendo*/
+}
+
+nav .nav-right-section img{
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+    border-radius: 30px;
+}
+
+
+/********** BUSCADOR - MAIN ************/
+
+main{
+    margin-top: 150px;
+    text-align: center; /* Cuando hay elementos de texto se utiliza text-align, y cuando hay elementos gráficos align-item*/
+}
+
+/* Sección logo */
+main .main-logo{
+    width: 530px;
+    /* 0 - sin margen arriba y abajo
+      auto - izquierda y derecha se ajustan automáticamente*/
+    margin: 0 auto; 
+    margin-bottom: 28px;
+}
+
+main .main-logo img{
+    height: 100px; /*120*/
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-input-container{
+    /*anchura de linea, estilo de línea y color*/
+    border: 1px solid #dfe1e5;
+    width: 570px; /*525*/
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+main .main-input input{
+    border: none;
+    height: 40px;
+    outline: none;
+    width: 530px;
+}
+
+main .main-input-container:hover{
+    border-color: #dfe1e500;
+    box-shadow: 0 1px 6px 0px #20212447;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-position: center;
+    background-size: contain;
+    height: 15px;
+    padding-left: 8%;
+    background-repeat: no-repeat; /*sirve para que no se dupliquen las imagenes*/
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-position: center;
+    background-size: contain;
+    height: 20px;
+    padding-right: 3%;
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-position: center;
+    background-size: contain;
+    height: 20px;
+    padding-right: 12%;
+    background-repeat: no-repeat;
+}
+
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    border: 0;
+    background-color: #f8f9fa;
+    font-size: 18px;
+    color: #3c4043;
+    height: 40px;
+    /*Redondeado de botones*/
+    border-radius: 4px;
+    /*Margen interno*/
+    padding: 0 15px;
+    /*Margen entre botones*/
+    margin-right: 15px;
+}
+
+/* Efecto hover de los botones*/
+main .main-buttons button:hover{
+    border-color: #dfe1e500;
+    box-shadow: 0 0px 3px 0px #20212447;
+}
+
+
+/********** FOOTER ************/
+
+footer{
+    width: 100%;
+    height: 20px;
+}
+
+footer nav{
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 390px;
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+nav .footer-left-section{
+    width: 40px;
+    /* Eliminar puntos */
+    list-style: none;
+    /* Propiedad flex - que sea responsivo y flexible */
+    display: flex;
+    justify-content:flex-start;
+    /* Centrado verticalmente */
+    text-align: start;
+    height: auto;
+    margin-top: 42px;
+}
+
+nav .footer-left-section a{
+    margin-right: 30px;
+    color: #70757A;
+}
+
+nav .footer-right-section{
+    width: 10px;
+    /* Eliminar puntos */
+    list-style: none;
+    /* Propiedad flex - que sea responsivo y flexible */
+    display: flex;
+    justify-content:flex-end;
+    /* Centrado verticalmente */
+    text-align: start;
+    height: auto;
+    margin-top: 42px;
+}
+
+nav .footer-right-section a{
+    margin-right: 30px;
+    color: #70757A;
+}
